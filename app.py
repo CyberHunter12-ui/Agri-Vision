@@ -534,7 +534,7 @@ def read_uploaded_image(file_storage) -> Tuple[str, np.ndarray, np.ndarray]:
 
 
 def analyze_image(image: np.ndarray) -> Dict[str, Any]:
-    ensure_models_loaded()
+   
 
     growth = infer_growth_stage(image)
     disease = infer_disease(image)
